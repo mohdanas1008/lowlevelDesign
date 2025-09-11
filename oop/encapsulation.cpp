@@ -6,6 +6,7 @@ class Book
 {
 
 private:
+    // encapsulation of data members so that they cannot be accessed directly
     string title;
     string author;
     double price;
