@@ -21,5 +21,6 @@ int main()
     // weatherStationObj->setWeatherDetails(10.2);
     
     weatherStationObj->setWeatherDetails(10.2);
+    weatherStationObj->setWeatherDetails(11.2);
     return 0;
 }
