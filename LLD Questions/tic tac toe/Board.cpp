@@ -45,6 +45,12 @@ void Board::updateFreeCells()
 
 bool Board::addPeace(int row, int col, PlayingPeace *playingPeace)
 {
+    if(row >=boardSize || col >=boardSize)
+    {
+        cout<<"Out Of Board Values entered, Please reselect"<<endl;
+        return false;
+    }
+
     if (gameBoard[row][col]->getPeaceType() != Common::getPeaceType(PeaceType::_))
     {
         cout<<"1: "<<gameBoard[row][col]->getPeaceType()<<endl;
